@@ -8,5 +8,5 @@ let producto = parseInt(prompt("Ingresa el código del producto a guardar:"));
 guardar(nombreProducto,producto);
 
 if (valor == NaN) {
-    document.write("El código del producto" +producto+ " no es válido");
+    document.write("El código del producto" + producto + " no es válido");
 }
