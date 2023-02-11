@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 3.5vw; */
+}
+
+header #titulo{
+    background-color: darkslategrey;
+    padding: 0.5em;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(211, 211, 211);
+}
+
+/* section{
+    width: 33%;
+    margin: auto;
+} */
+
+/* article{
+    width: 30%;
+    margin: auto; 
+    align-items: center;
+}  */
+
+.post{
+    width: 55%;
+    text-align: center;
+    /* border: 1px #000 solid; */
+    padding: 2em 1em;
+    background-color: white;
+    margin: 25px auto;
+    border-radius: 20px;
+}
+
+.post p{
+    color: gray;
+}
+
+img{
+    width: 100%;
+}
+
+.icon{
+    /* background-color: rgb(35, 59, 59); */
+    padding: 0.5em;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#ft1{
+    display: flex;
+    width: 50%;
+    justify-content: left;
+    margin: 0.9em;
+}
+
+#ft1 p, #ft1 a{
+    margin: auto 0;
+    color: white;
+    text-decoration: none;
+}
+
+#ft1 a:hover{
+    opacity: 50%;
+}
+
+footer{
+    /* font-size: 13px; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: darkslategray;
+    padding: 4em 2%;
+    color: white;
+    font-size: 3vw;
+}
