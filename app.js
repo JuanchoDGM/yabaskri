@@ -10,3 +10,6 @@ guardar(nombreProducto,producto);
 if (valor == NaN) {
     document.write("El código del producto" + producto + " no es válido");
 }
+else if(valor < 0) {
+    console.log("El valor del producto no puede ser negativo");    
+}
