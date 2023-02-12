@@ -9,7 +9,7 @@
 }
 
 header #titulo{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin: auto 0.3em;
     color: white;
 }
@@ -22,7 +22,7 @@ header{
     background-color: dodgerblue;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .icon2{
@@ -38,8 +38,7 @@ header{
 }
 
 header img{
-    width: 5em;
-    height: 5em;
+    width: 8em;
     margin: 1em;
     border-radius: 50%;
 }
@@ -68,8 +67,9 @@ section{
     color: gray;
 }
 
-img{
+.post img{
     width: 100%;
+    margin: 5% auto;
 }
 
 .icon{
@@ -91,6 +91,7 @@ img{
     margin: auto;
     color: white;
     text-decoration: none;
+    font-size: 1em;
     
 }
 
@@ -137,7 +138,7 @@ footer{
     color: white;
 }
 
-@media only screen and (min-width: 725px){
+@media (min-width: 350px) and (orientation: landscape) {
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -168,7 +169,8 @@ footer{
     .ft1 p, .ft1 a{
         margin: auto 0;
         color: white;
-        text-decoration: none;        
+        text-decoration: none;
+        font-size: 1em;       
     }
 
     section{
