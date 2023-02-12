@@ -8,6 +8,16 @@
     /* font-size: 3.5vw; */
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
 html{
     font-size: 22px;
 }
@@ -69,6 +79,16 @@ section{
     background-color: white;
     margin: 25px auto;
     border-radius: 20px;
+}
+
+.post:hover{
+    opacity: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.post:active{
+    opacity: 80%;
 }
 
 .post p{
@@ -165,6 +185,7 @@ footer{
                              "e e";
         padding: 4em 4%;
         color: white;
+        font-size: 1.5rem;
     }
 
     #about{
@@ -185,7 +206,7 @@ footer{
         margin: auto 0;
         color: white;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     section{
