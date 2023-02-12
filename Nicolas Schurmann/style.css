@@ -19,12 +19,12 @@ a:visited{
 }
 
 html{
-    font-size: 22px;
+    font-size: 26px;
 }
 
-h2{
+/* h2{
     font-size: 2rem;
-}
+} */
 
 header #titulo{
     /* font-size: 1.5rem; */
@@ -36,11 +36,28 @@ header #titulo{
     display: flex;
 }
 
+#sub{
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* #sub p{
+    margin: 0 auto;
+} */
+
 header{
-    background-color: cornflowerblue;
+    background-color: rgba(32, 32, 37, 0.3);
     text-align: left;
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    width: 100%;
+}
+
+#banner{
+    width: 100%;
+    border-bottom: solid 0.4rem gray;
 }
 
 .icon2{
@@ -72,6 +89,7 @@ section{
 }
 
 .post{
+    transition: box-shadow 0.5s ease;
     width: 65%;
     text-align: center;
     /* border: 1px #000 solid; */
@@ -82,9 +100,8 @@ section{
 }
 
 .post:hover{
-    opacity: 50%;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: all 0.5s ease;
 }
 
 .post:active{
@@ -93,7 +110,7 @@ section{
 
 .post p{
     color: gray;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 .post img{
@@ -113,16 +130,15 @@ footer{
     "d"
     "e";
     grid-gap: 2rem;
-    background-color: cornflowerblue;
+    background-color: #202025;
     padding: 4rem;
     color: white;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 .icon{
     padding: 0.5em;
     border-radius: 50%;
-    font-size: 1.9rem;
     margin: auto 0.5em;
 }
 
@@ -131,6 +147,7 @@ footer{
     height: 100%;
     margin: 0 auto;
     justify-content: center;
+    text-align: center;
     /* font-size: 2rem; */
 }
 
@@ -177,12 +194,8 @@ a.go-up{
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    border: 0.4rem solid rgb(63, 122, 233);
+    border: 0.4rem solid #34343d;
     border-radius: 2rem;
-}
-
-.arrow{
-    margin: 0 1rem;
 }
 
 /* ************************* PARA ESCRITORIO ******************** */
@@ -201,16 +214,20 @@ a.go-up{
                              "b d"
                              "c d"
                              "e e";
-        padding: 3rem 2rem;
+        padding: 3rem 2rem 1rem;
+        grid-gap: 0.5rem;
         color: white;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     #about{
         grid-area: d;
-        margin: 0;
         text-align: justify;
-        font-size: 1rem;
+        /* font-size: 1rem; */
+    }
+
+    #about p{
+        margin: 0;
     }
 
     .ft1{
@@ -225,7 +242,7 @@ a.go-up{
         margin: auto 0;
         color: white;
         text-decoration: none;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     section{
@@ -236,9 +253,5 @@ a.go-up{
 
     .post{
         width: 70%;
-    }
-
-    .post p{
-        font-size: 1.5rem;
     }
 }
