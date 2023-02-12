@@ -9,29 +9,50 @@
 }
 
 header #titulo{
-    background-color: darkslategrey;
-    padding: 0.5em;
+    font-size: 1.5rem;
+    margin: auto 0.3em;
     color: white;
 }
 
+.iconos{
+    display: flex;
+}
+
 header{
+    background-color: dodgerblue;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon2{
+    /* padding: 0.5em; */
+    border-radius: 50%;
+    font-size: 40px;
+    margin: auto 0.5em;
+    color: white;
+}
+
+#logo{
+    display: flex;
+}
+
+header img{
+    width: 5em;
+    height: 5em;
+    margin: 1em;
+    border-radius: 50%;
 }
 
 body{
     background-color: rgb(211, 211, 211);
 }
 
-/* section{
-    width: 33%;
+section{
     margin: auto;
-} */
-
-/* article{
-    width: 30%;
-    margin: auto; 
-    align-items: center;
-}  */
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 .post{
     width: 55%;
@@ -52,35 +73,111 @@ img{
 }
 
 .icon{
-    /* background-color: rgb(35, 59, 59); */
     padding: 0.5em;
     border-radius: 50%;
     font-size: 20px;
+    margin: auto 0.5em;
 }
 
-#ft1{
+.ft1{
     display: flex;
-    width: 50%;
-    justify-content: left;
-    margin: 0.9em;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-#ft1 p, #ft1 a{
-    margin: auto 0;
+.ft1 p, .ft1 a{
+    margin: auto;
     color: white;
     text-decoration: none;
+    
 }
 
-#ft1 a:hover{
+.ft1 a:hover{
     opacity: 50%;
 }
 
+#geo{
+    grid-area: a;
+}
+
+#cell{
+    grid-area: b;
+}
+
+#mail{
+    grid-area: c;
+}
+
+#about{
+    grid-area: d;
+    margin: 2em;
+    text-align: justify;
+}
+
+#copyright{
+    grid-area: e;
+    margin: auto;
+}
+
 footer{
-    /* font-size: 13px; */
-    display: flex;
-    flex-wrap: wrap-reverse;
-    background-color: darkslategray;
-    padding: 4em 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4em 4em 4em 4em;
+    grid-template-areas: "a a"
+                         "b b"
+                         "c c"
+                         "d d"
+                         "d d"
+                         "e e";
+    grid-gap: 0.5em;
+    background-color: dodgerblue;
+    padding: 4em 4%;
     color: white;
-    font-size: 3vw;
+}
+
+@media only screen and (min-width: 725px){
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4em 4em 4em 4em;
+        grid-template-areas: "a d"
+                             "b d"
+                             "c d"
+                             "x d"
+                             "e e";
+        padding: 4em 4%;
+        color: white;
+    }
+
+    #about{
+        grid-area: d;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .ft1{
+        display: flex;
+        /* width: 70%; */
+        height: 100%;
+        margin: 0;
+        justify-content: left;
+    }
+
+    .ft1 p, .ft1 a{
+        margin: auto 0;
+        color: white;
+        text-decoration: none;        
+    }
+
+    section{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .post{
+        width: 70%;
+    }
 }
